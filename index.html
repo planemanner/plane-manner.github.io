@@ -13,11 +13,9 @@
   <h1>Kang Il Lee</h1>
   <p class="title">Research Engineer</p>
 
-  <div class="research-tags">
-    <span>Representation Learning</span>
-    <span>Neural Network Pruning</span>
+  <div class="research-tags glass">
     <span>Visual Perception Models</span>
-    <span>Vision Language Models</span>
+    <span>Multimodal Representation & VLM</span>
     <span>Generative Models</span>
   </div>
 
@@ -65,9 +63,63 @@
 <section id="projects">
   <h2>Tech Implementations</h2>
   <div class="project-grid">
-    <!-- project cards -->
+
+    <div class="project-card">
+      <h3>Vision–Language Document Reasoning Agent</h3>
+      <p class="tags">VLM · PEFT · OCR · Multimodal · Reasoning</p>
+      <p class="description">
+        Built an end-to-end multimodal pipeline that parses document images,
+        aligns visual-text representations, and performs structured QA with tool-based reasoning.
+      </p>
+      <ul class="highlights">
+        <li>Fine-tuned VLM with LoRA on custom document dataset</li>
+        <li>Improved field extraction F1 by +18%</li>
+        <li>Deployed real-time inference pipeline (batch + streaming)</li>
+      </ul>
+      <div class="links">
+        <a href="#">GitHub</a>
+        <a href="#">Demo</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Tool-Using Multimodal Agent</h3>
+      <p class="tags">Agent · Planning · Memory · Tool Use · LLM</p>
+      <p class="description">
+        Designed an agent architecture that combines perception, reasoning,
+        tool execution, and episodic memory for task automation.
+      </p>
+      <ul class="highlights">
+        <li>Implemented planner–executor loop with state tracking</li>
+        <li>Integrated vision encoder for visual grounding</li>
+        <li>Measured task success rate and recovery behavior</li>
+      </ul>
+      <div class="links">
+        <a href="#">GitHub</a>
+        <a href="#">Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Industrial Anomaly Detection System</h3>
+      <p class="tags">Segmentation · Anomaly Detection · Optimization · MLOps</p>
+      <p class="description">
+        Production-grade vision system for defect detection and monitoring in manufacturing environments.
+      </p>
+      <ul class="highlights">
+        <li>Handled 10M+ images for training and validation</li>
+        <li>Reduced false positives by 30%</li>
+        <li>Optimized inference latency via pruning and batching</li>
+      </ul>
+      <div class="links">
+        <a href="#">Case Study</a>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <section id="contact">
   <h2>Contact</h2>
