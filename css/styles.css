@@ -1,33 +1,126 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    margin: 0;
-    padding: 60px 20px;
-    background: #fafafa;
-    color: #111;
-  }
-  
-  section {
-    max-width: 900px;
-    margin: 0 auto 100px;
-  }
-  
-  .hero {
-    text-align: center;
-    margin-bottom: 120px;
-  }
-  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 60px 20px;
+  background: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto 100px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+/* ======================
+   Hero
+====================== */
+
+.hero {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.hero .title {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* Research tags */
+
+.research-tags {
+  margin: 16px 0 24px;
+}
+
+.research-tags span {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 16px;
+  background: #eee;
+  font-size: 0.85rem;
+}
+
+/* Hero links */
+
+.hero-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.hero-links a:hover {
+  text-decoration: underline;
+}
+
+/* ======================
+   Lists / Timeline
+====================== */
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin-bottom: 16px;
+}
+
+/* ======================
+   Projects
+====================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* ======================
+   Contact
+====================== */
+
+#contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact li {
+  margin-bottom: 8px;
+}
+
+#contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ======================
+   Responsive
+====================== */
+
+@media (max-width: 640px) {
   .hero h1 {
-    font-size: 48px;
-    margin-bottom: 12px;
+    font-size: 36px;
   }
-  
-  .hero-links a {
-    margin: 0 12px;
-    text-decoration: none;
-    color: #2563eb;
+
+  section {
+    margin-bottom: 72px;
   }
-  
-  h2 {
-    margin-bottom: 16px;
-  }
-  
+}
